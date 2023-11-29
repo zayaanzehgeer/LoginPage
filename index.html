@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="stack.js" defer></script>
+</head>
+
+<body class="body1">
+    <!----------------------------------------------------------------->
+    <section id="section1" class="body1">
+        <div class="container">
+            <h2 id="h21">Sign in</h2>
+            <div id="loginResult"></div>
+            <div id="loginResult2"></div>
+            <form id="signInForm" action="" method="post">
+                <input type="email" placeholder="Email" class="enter_email input1" id="signinEmail" required>
+                <br>
+                <input type="password" placeholder="Password" class="enter_password input1" id="signinPassword" required
+                    minlength="3">
+                <br><br>
+                <button type="button" id="signInButton" onclick="signIn()">Sign in</button>
+            </form>
+            <br>
+            <span onclick="toggleSections()" id="signInToggle">Don't have an account? Sign Up
+            </span>
+        </div>
+    </section>
+
+    <!------------------------------------------------------------------>
+    <section id="section2" class="two body1">
+        <div class="whole">
+            <form id="signUpForm" action="" method="post">
+                <h2 id="h22">Create an Account</h2>
+                <label for="ab"> First Name: </label>
+                <input class="input2" type="text" id="ab" placeholder="John..." required>
+                <br>
+                <label for="ac">Last Name:</label>
+                <input class="input2" type="text" id="ac" placeholder="Smith..." required>
+                <br>
+                <label for="ad">Email:</label>
+                <input class="input2" type="text" id="ad" placeholder="@mail.com" required>
+                <br>
+                <label for="ae">Password:</label>
+                <input class="input2" type="password" id="entpass" required minlength="3">
+                <br>
+                <input id="submit2" type="submit" value="Create" class="button input2">
+                <br>
+                <span class="back" onclick="toggleSections()">Have an account? Sign in</span>
+            </form>
+        </div>
+    </section>
+</body>
+<!---------------------------------------------------------------->
+
+<body class="body2">
+    <section id="section3">
+        <div class="section2main">
+            <button class="section3button"><i class="fa-solid fa-house" style="color: #000000;"></i> Home</button>
+            <button class="section3button" onclick="toggleBodies()"><i class="fa-solid fa-user-plus"
+                    style="color: #000000;"></i> Login</button>
+        </div>
+        <div class="section3main">
+            <h2 id="h23">Admin Dashboard </h2>
+            <div class="table3">
+                <span class="span3"><i class="fa-solid fa-user" style="color: #ffffff;"></i> Firstname</span>
+                <span class="span3"><i class="fa-solid fa-people-group" style="color: #ffffff;"></i> Lastname</span>
+                <span class="span3"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> Email</span>
+                <span class="span3"><i class="fa-solid fa-key" style="color: #ffffff;"></i> Password</span>
+                <span class="span3"><i id="fa" class="fa-solid fa-trash" style="color: #ffffff;"></i> Delete</span>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+
+
+</html>
